@@ -1,7 +1,7 @@
 package com.ada.blogappnosql.controller;
 
 import com.ada.blogappnosql.repository.entity.Comment;
-import com.ada.blogappnosql.service.CommentService;
+import com.ada.blogappnosql.service.impl.CommentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.ada.blogappnosql.service;
+package com.ada.blogappnosql.service.impl;
 
 
 import com.ada.blogappnosql.repository.BlogEntryRepository;

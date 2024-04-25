@@ -1,4 +1,4 @@
-package com.ada.blogappnosql.service;
+package com.ada.blogappnosql.service.impl;
 
 
 import com.ada.blogappnosql.repository.CommentRepository;
@@ -6,7 +6,6 @@ import com.ada.blogappnosql.repository.entity.Comment;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 
 @Service
 public class CommentService {

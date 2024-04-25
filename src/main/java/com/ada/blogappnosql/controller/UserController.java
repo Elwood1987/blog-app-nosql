@@ -2,7 +2,7 @@ package com.ada.blogappnosql.controller;
 
 
 import com.ada.blogappnosql.repository.entity.User;
-import com.ada.blogappnosql.service.UserService;
+import com.ada.blogappnosql.service.impl.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +25,7 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
-        userService.saveUser(user);
+        userService.save(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 }
