@@ -2,10 +2,12 @@ package com.ada.blogappnosql.repository.entity;
 
 
 import com.ada.blogappnosql.constants.ERole;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@AllArgsConstructor
 @Document(collection = "roles")
 @Data
 public class Role {
@@ -14,4 +16,10 @@ public class Role {
 
     private ERole name;
 
+    public Role() {
+    }
+
+    public Role(ERole name) {
+        this.name = name;
+    }
 }
